@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>skyllmolu - Accueil</title>
+  <meta name="description" content="Vous trouverez ici tous mes réseaux" />
+  <meta name="author" content="skyllmolu" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Vidéo en fond -->
+  <div class="video-background">
+   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7kCD4dZQ8Tc?si=hnB3Ft8OMkmM9Xsq&autoplay=1&mute=1&loop" title="YouTube video player" framer="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  
+  <!-- Header -->
+  <header>
+    <h1>Bienvenue sur mon site les mecs</h1>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <p>Mes réseaux</p>
+    <ul>
+      <li><a href="https://www.twitch.tv/skyllmolu">Mon Twitch</a></li>
+      <li><a href="https://www.youtube.com/@Skyllmolu">Mon YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@skyllmolu">Mon TikTok</a></li>
+    </ul>
+  </main>
+  
+  <nav class="menu">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="menu-links" id="menuLinks">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="allvideo.html">Plus de vidéos</a></li>
+    <li><a href="discord.html">Serveur discord</a></li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menuLinks");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+<footer>
+    &copy; 2025 Skyllmolu - Tous droits réservés
+  </footer>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</body>
+</html>
