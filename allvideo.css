@@ -288,5 +288,42 @@ html, body {
   pointer-events: none;
 }
 
+.footer-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
 
+.footer-tabs a {
+  color: #00f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.footer-tabs a:hover {
+  background: #00f;
+  color: #fff;
+}
  
+.social-icon {
+  height: 30px;
+  width: auto;
+  margin: 0 10px;
+  filter: drop-shadow(0 0 2px #0ff);
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}

@@ -5,6 +5,7 @@
   <title>skyllmolu - Accueil</title>
   <meta name="description" content="Vous trouverez ici tous mes réseaux" />
   <meta name="author" content="skyllmolu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="header.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,17 +19,13 @@
   <!-- Header -->
   <header>
     <h1>Bienvenue sur mon site les mecs</h1>
+     <button id="welcomebtn" class="welcome-btn" onclick="sayWelcomeOnce(this)">Bienvenue</button>
   </header>
 
+ 
+
   <!-- Contenu principal -->
-  <main>
-    <p>Mes réseaux</p>
-    <ul>
-      <li><a href="https://www.twitch.tv/skyllmolu">Mon Twitch</a></li>
-      <li><a href="https://www.youtube.com/@Skyllmolu">Mon YouTube</a></li>
-      <li><a href="https://www.tiktok.com/@skyllmolu">Mon TikTok</a></li>
-    </ul>
-  </main>
+
   
   <nav class="menu">
   <div class="menu-toggle" onclick="toggleMenu()">
@@ -48,13 +45,32 @@
     const menu = document.getElementById("menuLinks");
     menu.style.display = menu.style.display === "block" ? "none" : "block";
   }
+  
+  function sayWelcomeOnce() {
+    const button = document.getElementById("welcomebtn");
+    button.style.display = "none";
+  }
 </script>
 
-<footer>
-    &copy; 2025 Skyllmolu - Tous droits réservés
-  </footer>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+<footer class="footer-tabs">
+  &copy; 2025 Skyllmolu - Tous droits réservés
+
+   <a href="https://www.twitch.tv/skyllmolu" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Twitch" class="social-icon">
+  </a>
+
+   <a href="https://www.youtube.com/@Skyllmolu" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="social-icon">
+</a>
+
+  <a href="https://www.tiktok.com/@skyllmolu" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" class="social-icon">
+  </a>
+</footer>
+
 
 </body>
 </html>
