@@ -83,11 +83,6 @@ html, body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes textFlow {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
-}
-
     /* Contenu principal */
     main {
       position: absolute;
