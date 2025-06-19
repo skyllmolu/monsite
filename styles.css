@@ -49,6 +49,45 @@ html, body {
       font-size: 2rem;
     }
 
+    .custom-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+  animation: fadeDown 1s ease-out;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textFlow 3s linear infinite, fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textFlow {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
     /* Contenu principal */
     main {
       position: absolute;
@@ -186,6 +225,7 @@ a:hover {
 }
 
 .menu-links {
+width: max-content;
   list-style: none;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -212,6 +252,8 @@ a:hover {
 .menu-links a:hover {
   color: #fff;
 }
+
+
 
 iframe {
   width: 100%;
@@ -300,3 +342,4 @@ iframe {
 .social-icon:hover {
   transform: scale(1.2);
 }
+

@@ -185,6 +185,7 @@ a:hover {
 }
 
 .menu-links {
+        width: max-content;
   list-style: none;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
