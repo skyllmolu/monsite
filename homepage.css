@@ -390,3 +390,27 @@ body {
 .card-container:has(.card:hover) .card:not(:hover) {
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* une seule colonne */
+    width: 95%;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+
+  .card__title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
