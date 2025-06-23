@@ -374,6 +374,7 @@ body {
   font-size: 1.3rem;    
   padding: 3rem 2rem;  
   line-height: 1.7;
+  white-space: normal;
 }
 
 
@@ -393,7 +394,7 @@ body {
 
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr; 
     width: 95%;
     gap: 1rem;
   }
