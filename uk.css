@@ -328,3 +328,49 @@ html, body {
 .social-icon:hover {
   transform: scale(1.2);
 }
+
+.square-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #121212;
+}
+
+.square-block {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f24;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.square-block:hover {
+  transform: scale(1.05);
+}
+
+.square-block img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.square-block span {
+  font-size: 0.85rem;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+
